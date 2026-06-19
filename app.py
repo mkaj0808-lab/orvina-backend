@@ -21,7 +21,7 @@ app = Flask(__name__)
 CORS(app)  # للسماح للواجهة الأمامية (frontend) بالاتصال بالـ API من أي منفذ
 
 
-@app.route("/")
+@app.route("/api")
 def home():
     return jsonify({
         "status": "ok",
